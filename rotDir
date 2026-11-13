@@ -6,3 +6,5 @@ No* rotDir(No *p) {
     atualiza(u);
     return u;
 }
+
+No* rotDuplaDir(No *p) { p->esq = rotEsq(p->esq); return rotDir(p); }
