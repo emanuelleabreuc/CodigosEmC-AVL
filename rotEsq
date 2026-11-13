@@ -1,0 +1,8 @@
+No* rotEsq(No *p) {
+    No *u = p->dir;
+    p->dir = u->esq;
+    u->esq = p;
+    atualiza(p);
+    atualiza(u);
+    return u;
+}
